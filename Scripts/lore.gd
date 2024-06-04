@@ -6,6 +6,8 @@ signal scene2_closed
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$scene1.show()
+	$scene1/Label.show()
+	$scene1/Label2.hide()
 	$scene1.play("Sparkly")
 	
 	display_scene1("In a world far far away...")
@@ -28,10 +30,17 @@ func _ready():
 	display_scene1("The old mage of the village checked through all the village's manuscipts")
 	await scene1_closed
 	
-	$scene1.play("prophecy")
 	
 	display_scene1("and he found an ancient prophecy")
 	await scene1_closed
+	
+	$scene1.play("prophecy")
+	
+	$scene1/Label2.show()
+	$scene1/Label.hide()
+	
+	display_scene2("temporary text")
+	await scene2_closed
 	
 	display_scene2("When the village is upturned by a violent storm")
 	await scene2_closed
@@ -42,10 +51,13 @@ func _ready():
 	display_scene2("The Hero of fate will journey through the dark forest of Esmeray")
 	await scene2_closed
 	
-	display_scene2("By defeating the 3 guardians, the elixir they will find")
+	display_scene2("By defeating the 3 guardians, the elixir he will find")
 	await scene2_closed
 	
 	$scene1.play("hero")
+	
+	$scene1/Label.show()
+	$scene1/Label2.hide()
 	
 	display_scene1("Suddenly the old mage was blinded by a bright light")
 	await scene1_closed
@@ -74,8 +86,6 @@ func _process(delta):
 	pass
 
 func display_scene1(text):
-	$scene1/Label.show()
-	$scene1/Label2.hide()
 	$AnimationPlayer.play("test_appear_1")
 	$scene1/Label.text =text
 
@@ -86,7 +96,5 @@ func _input(_event):
 		emit_signal("scene2_closed")
 
 func display_scene2(text):
-	$scene1/Label.hide()
-	$scene1/Label2.show()
 	$AnimationPlayer.play("text_appear_2")
 	$scene1/Label2.text =text

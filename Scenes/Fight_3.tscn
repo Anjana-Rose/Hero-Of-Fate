@@ -267,7 +267,7 @@ theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_enftb")
 theme_override_styles/hover = SubResource("StyleBoxFlat_k3ga8")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ohf28")
-text = "Defend"
+text = "Stun"
 
 [node name="Textbox" type="Panel" parent="."]
 visible = false

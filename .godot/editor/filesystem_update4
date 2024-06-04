@@ -2,7 +2,6 @@ res://Scenes/player.tscn
 res://Scripts/mob.gd
 res://Scripts/Ogre.tres
 res://Scripts/Dragon.tres
-res://Scripts/enemy.gd
 res://Scenes/enemy.tscn
 res://Scenes/Real_Level_1.tscn
 res://Scenes/Level_2.tscn
@@ -14,3 +13,4 @@ res://Scenes/lore.tscn
 res://UI/Start.tscn
 res://UI/Victory.tscn
 res://UI/Fallen.tscn
+res://Scripts/lore.gd
