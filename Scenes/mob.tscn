@@ -1,0 +1,158 @@
+[gd_scene load_steps=21 format=3 uid="uid://dylr8vx8bj1v1"]
+
+[ext_resource type="Texture2D" uid="uid://dsojto6u87d1q" path="res://Assets/playersprites/mob1.png" id="1_ayq14"]
+[ext_resource type="Script" path="res://Scripts/mob.gd" id="1_t1e0t"]
+[ext_resource type="Texture2D" uid="uid://dkd3m1hpetk6l" path="res://Assets/playersprites/mob1_damaged.png" id="3_jwa43"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17ma5"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(288, 44, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijt1o"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(0, 88, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ad44i"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(48, 88, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gg0n8"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(96, 88, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbok5"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(192, 88, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qrq2"]
+atlas = ExtResource("3_jwa43")
+region = Rect2(0, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_acovq"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(0, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwl3k"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(48, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30twa"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(96, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vd7sw"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(144, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fu1ne"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(192, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqje8"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(240, 0, 48, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i22vt"]
+atlas = ExtResource("1_ayq14")
+region = Rect2(288, 0, 48, 44)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0trs6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17ma5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijt1o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ad44i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gg0n8")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbok5")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qrq2")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_acovq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwl3k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30twa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vd7sw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fu1ne")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqje8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i22vt")
+}],
+"loop": true,
+"name": &"move",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cdm6j"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f2o78"]
+radius = 16.1809
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6ant5"]
+radius = 12.4468
+
+[node name="MobEnemy" type="CharacterBody2D"]
+scale = Vector2(0.803417, 0.803417)
+script = ExtResource("1_t1e0t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0trs6")
+animation = &"hurt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("CircleShape2D_cdm6j")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="MobHitBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MobHitBox"]
+position = Vector2(-1.24468, 1.24468)
+shape = SubResource("CircleShape2D_f2o78")
+
+[node name="MobDealDamageArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MobDealDamageArea"]
+position = Vector2(-1.24468, 1.24468)
+shape = SubResource("CircleShape2D_6ant5")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="MobHitBox" to="." method="_on_mob_hit_box_area_entered"]

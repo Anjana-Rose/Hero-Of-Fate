@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg3k6kdegejhn"]
+
+[ext_resource type="AudioStream" uid="uid://eigtc7q08lq" path="res://Assets/music/HoliznaCC0 - Three Feet of Snow, Shut In, Iron Skies.mp3" id="1_c8nsb"]
+
+[node name="Song1" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1_c8nsb")
+autoplay = true

@@ -1,0 +1,71 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1717525180
+export_presets.cfg::TextFile::-1::1717451591::0::1::::<><>::
+::res://Assets/::1717439675
+::res://Assets/boss fight/::1717187374
+bg.png::CompressedTexture2D::3849786674930059794::1717083200::1717083221::1::::<><>::
+dragon.png::CompressedTexture2D::3580744807269959632::1717086119::1717086125::1::::<><>::
+ogre.png::CompressedTexture2D::2453075582394859388::1717187333::1717187374::1::::<><>::
+p1.png::CompressedTexture2D::6651559440007820158::1717091059::1717091063::1::::<><>::
+slimes.png::CompressedTexture2D::5872803715363210851::1717086743::1717086750::1::::<><>::
+TextBoxDecoThing.png::CompressedTexture2D::7044280009710551193::1717093796::1717093831::1::::<><>::
+::res://Assets/Font/::1717430289
+ARCADECLASSIC.TTF::FontFile::819806363140948438::1716809464::1716809486::1::::<><>::
+LaTequila.ttf::FontFile::9153240446369734999::1716809464::1716809486::1::::<><>::
+Schrödinger.ttf::FontFile::7733249688537773675::1716809464::1716809486::1::::<><>::
+::res://Assets/fountain/::1717448842
+::res://Assets/lore/::1717444341
+lore.png::CompressedTexture2D::1675087738078499997::1717444308::1717444310::1::::<><>::
+::res://Assets/music/::1717436695
+613217__flammos__rough-trerrain-grass-soft-23.wav::AudioStreamWAV::878773103251439224::1717435220::1717436103::1::::<><>::
+641897__colorscrimsontears__light-magic-rpg-1.wav::AudioStreamWAV::1224772977919614861::1717435703::1717436103::1::::<><>::
+HoliznaCC0 - Three Feet of Snow, Shut In, Iron Skies.mp3::AudioStreamMP3::8754964231397842::1717435047::1717436481::1::::<><>::
+Koi-discovery - Mermaids-Trapped.mp3.mp3::AudioStreamMP3::8859984100077706508::1717435045::1717436695::1::::<><>::
+::res://Assets/playersprites/::1717323879
+FL-front.png::CompressedTexture2D::6985019980602433534::1717264612::1717264689::1::::<><>::
+MaleMC-Back.png::CompressedTexture2D::4633513120658991918::1716891973::1716892012::1::::<><>::
+MaleMC-Front.png::CompressedTexture2D::459191609434654398::1716888828::1716890205::1::::<><>::
+MaleMC-Side.png::CompressedTexture2D::1957412824613185532::1716897168::1716900815::1::::<><>::
+ML-damaged_and_death.png::CompressedTexture2D::6481990110240713410::1717323863::1717323879::1::::<><>::
+mob1.png::CompressedTexture2D::8452143692309722720::1717268247::1717268284::1::::<><>::
+mob1_damaged.png::CompressedTexture2D::7869066503154496841::1717275422::1717275426::1::::<><>::
+::res://Assets/tilemap/::1717367081
+green_side.png::CompressedTexture2D::8137139577581254321::1717343333::1717343338::1::::<><>::
+green_zoomed_in.png::CompressedTexture2D::8343876581689202885::1717342029::1717343260::1::::<><>::
+map.png::CompressedTexture2D::7556712521094443288::1716999048::1716999060::1::::<><>::
+red_side.png::CompressedTexture2D::3763903817377829191::1717343088::1717343260::1::::<><>::
+red_zoomed_in.png::CompressedTexture2D::6659568111545650650::1717342047::1717343260::1::::<><>::
+::res://Scenes/::1717451505
+enemy.tscn::PackedScene::7809597363738412521::1717451503::0::1::::<><>::uid://cpw3hpmbv0w32::::res://Assets/boss fight/slimes.png<>res://Scripts/enemy.gd
+Fight_1.tscn::PackedScene::944231640762156515::1717451504::0::1::::<><>::res://Scripts/fight.gd<>uid://ct12hegu416jm::::res://Scripts/Sllimes.tres<>uid://bu34ooh38xlvu::::res://Assets/boss fight/bg.png<>uid://braslxpuhjs13::::res://Assets/boss fight/dragon.png<>uid://c11chhjg8yh15::::res://Assets/boss fight/p1.png<>uid://digbq0mlkbh3p::::res://Assets/Font/Schrödinger.ttf<>uid://bdhxgp2btms0y::::res://Scenes/song_2.tscn
+Fight_2.tscn::PackedScene::6551337029479121072::1717451504::0::1::::<><>::res://Scripts/fight.gd<>uid://5ns82eik83o5::::res://Scripts/Ogre.tres<>uid://bu34ooh38xlvu::::res://Assets/boss fight/bg.png<>uid://braslxpuhjs13::::res://Assets/boss fight/dragon.png<>uid://c11chhjg8yh15::::res://Assets/boss fight/p1.png<>uid://bdhxgp2btms0y::::res://Scenes/song_2.tscn
+Fight_3.tscn::PackedScene::6737609649520056256::1717451505::0::1::::<><>::res://Scripts/fight.gd<>uid://dlvta37bfq1j7::::res://Scripts/Dragon.tres<>uid://bu34ooh38xlvu::::res://Assets/boss fight/bg.png<>uid://braslxpuhjs13::::res://Assets/boss fight/dragon.png<>uid://c11chhjg8yh15::::res://Assets/boss fight/p1.png<>uid://bdhxgp2btms0y::::res://Scenes/song_2.tscn
+Level_1.tscn::PackedScene::6669767890785986933::1717436622::0::1::::<><>::res://Scripts/Instructions.gd<>uid://digbq0mlkbh3p
+Level_2.tscn::PackedScene::5978833199625265651::1717451504::0::1::::<><>::res://Scripts/main.gd<>uid://dn6xq88xbdasf::::res://Assets/tilemap/green_side.png<>uid://dylr8vx8bj1v1::::res://Scenes/mob.tscn<>uid://dq43otby65e50::::res://Assets/tilemap/green_zoomed_in.png<>uid://btvi7fr8bqh64::::res://Assets/tilemap/red_side.png<>uid://c147d4twsoiqk::::res://Assets/tilemap/red_zoomed_in.png<>uid://dfwr7ls5uofau::::res://Assets/tilemap/map.png<>uid://bwjpugcetxvgh::::res://Scenes/player.tscn<>uid://djja6sj1k0qjp::::res://Scenes/enemy.tscn<>uid://5ns82eik83o5::::res://Scripts/Ogre.tres<>uid://bhym2p0vnk2::::res://UI/player_ui_screen.tscn<>uid://cg3k6kdegejhn::::res://Scenes/song_1.tscn
+Level_3.tscn::PackedScene::3226131161381339858::1717451504::0::1::::<><>::res://Scripts/main.gd<>uid://dylr8vx8bj1v1::::res://Scenes/mob.tscn<>uid://dn6xq88xbdasf::::res://Assets/tilemap/green_side.png<>uid://dq43otby65e50::::res://Assets/tilemap/green_zoomed_in.png<>uid://btvi7fr8bqh64::::res://Assets/tilemap/red_side.png<>uid://c147d4twsoiqk::::res://Assets/tilemap/red_zoomed_in.png<>uid://dfwr7ls5uofau::::res://Assets/tilemap/map.png<>uid://bwjpugcetxvgh::::res://Scenes/player.tscn<>uid://djja6sj1k0qjp::::res://Scenes/enemy.tscn<>uid://dlvta37bfq1j7::::res://Scripts/Dragon.tres<>uid://bhym2p0vnk2::::res://UI/player_ui_screen.tscn<>uid://cg3k6kdegejhn::::res://Scenes/song_1.tscn
+lore.tscn::PackedScene::3483540851618828554::1717451505::0::1::::<><>::res://Scripts/lore.gd<>uid://x4opktdfya8l::::res://Assets/lore/lore.png<>uid://digbq0mlkbh3p::::res://Assets/Font/Schrödinger.ttf
+mob.tscn::PackedScene::8867594713784573828::1717436622::0::1::::<><>::uid://dsojto6u87d1q
+player.tscn::PackedScene::3950101432723716623::1717451503::0::1::::<><>::res://Scripts/player.gd<>uid://gso23o6hhygk::::res://Assets/playersprites/MaleMC-Front.png<>uid://25gkkssijggq::::res://Assets/playersprites/MaleMC-Side.png<>uid://b7arjwpsrjb31::::res://Assets/playersprites/MaleMC-Back.png<>uid://cyl6ovgce6371::::res://Assets/playersprites/ML-damaged_and_death.png<>uid://mrxi85vqyjk7::::res://Assets/music/613217__flammos__rough-trerrain-grass-soft-23.wav<>uid://rpj3j2d6im10::::res://Assets/music/641897__colorscrimsontears__light-magic-rpg-1.wav
+Real_Level_1.tscn::PackedScene::1339302872985832869::1717451503::0::1::::<><>::res://Scripts/main.gd<>uid://dylr8vx8bj1v1::::res://Scenes/mob.tscn<>uid://dn6xq88xbdasf::::res://Assets/tilemap/green_side.png<>uid://dq43otby65e50::::res://Assets/tilemap/green_zoomed_in.png<>uid://btvi7fr8bqh64::::res://Assets/tilemap/red_side.png<>uid://c147d4twsoiqk::::res://Assets/tilemap/red_zoomed_in.png<>uid://dfwr7ls5uofau::::res://Assets/tilemap/map.png<>uid://bwjpugcetxvgh::::res://Scenes/player.tscn<>uid://djja6sj1k0qjp::::res://Scenes/enemy.tscn<>uid://ct12hegu416jm::::res://Scripts/Sllimes.tres<>uid://bhym2p0vnk2::::res://UI/player_ui_screen.tscn<>uid://cg3k6kdegejhn::::res://Scenes/song_1.tscn
+song_1.tscn::PackedScene::5252440065924628831::1717436733::0::1::::<><>::uid://eigtc7q08lq
+song_2.tscn::PackedScene::2612845894113965218::1717436733::0::1::::<><>::uid://dyh3v5c0i13fc
+::res://Scripts/::1717451503
+BaseEnemy.gd::GDScript::-1::1717144069::0::1::::<>Resource<>::
+Dragon.tres::Resource::7975846406935799210::1717451396::0::1::::<><>::res://Scripts/BaseEnemy.gd<>uid://braslxpuhjs13::::res://Assets/boss fight/dragon.png
+enemy.gd::GDScript::-1::1717451503::0::1::::<>Area2D<>::
+fight.gd::GDScript::-1::1717431376::0::1::::<>Control<>::
+Instructions.gd::GDScript::-1::1717431079::0::1::::<>Control<>::
+lore.gd::GDScript::-1::1717445873::0::1::::<>Control<>::
+main.gd::GDScript::-1::1717421244::0::1::::<>Node2D<>::
+mob.gd::GDScript::-1::1717451396::0::1::::MobEnemy<>CharacterBody2D<>::
+Ogre.tres::Resource::2133655481700254738::1717451396::0::1::::<><>::res://Scripts/BaseEnemy.gd<>uid://ba7j2cxn0ghng::::res://Assets/boss fight/ogre.png
+player.gd::GDScript::-1::1717437315::0::1::::<>CharacterBody2D<>::
+player_ui_screen.gd::GDScript::-1::1717434636::0::1::::<>Control<>::
+Sllimes.tres::Resource::6161755297787147738::1717148902::0::1::::<><>::res://Scripts/BaseEnemy.gd<>uid://cpw3hpmbv0w32
+State.gd::GDScript::-1::1717431442::0::1::::<>Node<>::
+ui.gd::GDScript::-1::1717351386::0::1::::<>Control<>::
+::res://UI/::1717451505
+Fallen.tscn::PackedScene::9101221967925096084::1717451505::0::1::::<><>::res://Scripts/ui.gd
+player_ui_screen.tscn::PackedScene::2532928462844027::1717436622::0::1::::<><>::uid://digbq0mlkbh3p
+Start.tscn::PackedScene::8121786968706863181::1717451505::0::1::::<><>::res://Scripts/ui.gd
+Victory.tscn::PackedScene::3691678006469238387::1717451505::0::1::::<><>::res://Scripts/ui.gd

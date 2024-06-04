@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdhxgp2btms0y"]
+
+[ext_resource type="AudioStream" uid="uid://dyh3v5c0i13fc" path="res://Assets/music/Koi-discovery - Mermaids-Trapped.mp3.mp3" id="1_2iwh4"]
+
+[node name="Song2" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1_2iwh4")
+autoplay = true

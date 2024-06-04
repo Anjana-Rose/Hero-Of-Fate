@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsujnrnvp27ch"]
+
+[ext_resource type="Script" path="res://Scripts/ui.gd" id="1_sbdhy"]
+
+[sub_resource type="SystemFont" id="SystemFont_fk0fp"]
+font_names = PackedStringArray("Impact")
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sbdhy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.592157, 0.290196, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.5
+offset_right = 67.5
+offset_bottom = 64.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.756863, 0.6, 0.243137, 1)
+theme_override_fonts/font = SubResource("SystemFont_fk0fp")
+theme_override_font_sizes/font_size = 49
+text = "VICTORY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="b1" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 90.0
+offset_right = 122.0
+offset_bottom = 134.0
+text = "play again"
+
+[node name="b2" type="Button" parent="ColorRect"]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 89.0
+offset_right = 272.0
+offset_bottom = 133.0
+text = "quit"
+
+[connection signal="pressed" from="ColorRect/b1" to="." method="_on_b_1_pressed"]
+[connection signal="pressed" from="ColorRect/b2" to="." method="_on_b_2_pressed"]

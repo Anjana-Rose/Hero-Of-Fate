@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://ct12hegu416jm"]
+
+[ext_resource type="Script" path="res://Scripts/BaseEnemy.gd" id="1_nlm48"]
+[ext_resource type="Texture2D" uid="uid://cpw3hpmbv0w32" path="res://Assets/boss fight/slimes.png" id="2_bs0d4"]
+
+[resource]
+script = ExtResource("1_nlm48")
+name = "Slimes"
+texture = ExtResource("2_bs0d4")
+health = 40
+damage = 2
